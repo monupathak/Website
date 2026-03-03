@@ -1,519 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Namaste &#x1F64F;</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
-    <link rel="stylesheet" href="assets/css/meyawo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monu Kumar Pathak | AI & LLM Research</title>
+  <meta name="description" content="Portfolio of Monu Kumar Pathak - AI and LLM Researcher focused on simulation intelligence, explainability, and deep reinforcement learning." />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Monu Kumar Pathak | AI & LLM Research" />
+  <meta property="og:description" content="AI and LLM Researcher focused on simulation intelligence, explainability, and deep reinforcement learning." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="profile.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Monu Kumar Pathak | AI & LLM Research" />
+  <meta name="twitter:description" content="AI and LLM Researcher focused on simulation intelligence, explainability, and deep reinforcement learning." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+  
+  <!-- Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-spinner"></div>
+  </div>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
 
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">MKP</a>
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
-                </li>
-                <!--
-                <li class="item">
-                    <a class="link" href="#testmonial">Testmonial</a>
-                </li>
-                -->
-                <li class="item">
-                    <a class="link" href="#blog">Blog</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-                <!--
-                <li class="item ml-md-3">
-                    <a href="components.html" class="btn btn-primary">Components</a>
-                </li>
-                -->
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>
-    </nav><!-- End of Page Navbar -->
+  <header class="site-header glass">
+    <div class="container nav-wrap">
+      <!-- <a class="brand" href="#top"><span>MKP</span></a> -->
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#trajectory">Trajectory</a>
+        <a href="#projects">Projects</a>
+        <a href="#endorsements">Endorsements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Monu Pathak</span>
-            </h1>
-            <p class="header-subtitle">AI, ML & Optimization Enthusiast</p>
-
-            <button class="btn btn-primary">Visit My Works</button>
-        </div>
-    </header><!-- end of page header -->
-
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/man.png" class="about-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        <strong>Hi, I’m Monu Kumar Pathak, a student at IIT Bombay, specializing in the IEOR (Industrial Engineering and Operations Research) department</strong>. 
-                        My curiosity for new technologies, particularly Deep Learning, Machine Learning, and Operations Research, drives me to constantly explore and learn. 
-                        I’ve had the opportunity to work on projects such as developing a Large Language Model (LLM) for common sense knowledge generation, 
-                        applying AI for advanced data analytics and simulation, and reducing flight delays using metaheuristics. 
-                    </p>
-                    
-                    <p>
-                        My passion lies not only in acquiring new knowledge but also in applying it to solve real-world problems and contribute to making the world a better place.
-    
-
-                    </p>
-                    <a href="assets/resume/Resume_IITb (2).pdf" download="Monu_Pathak_CV.pdf">
-                        <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
-                    </a>
-                    
-                </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-    <!-- service section -->
-    <section class="section" id="service">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Do ?</p>
-            <h6 class="section-title mb-6">Technical Skills</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/AIML.svg"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                class="icon">
-                            <h6 class="title">AI & ML</h6>
-                            <p class="subtitle">I’ve completed various courses in Machine Learning, Artificial Intelligence and Data analysis and i've done various projects in this domain </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/toolbox.svg"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                class="icon">
-                            <h6 class="title">Optimization</h6>
-                            <p class="subtitle">I’ve worked on a bunch of optimization projects and know my way around operations research</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/Simulation.svg"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                class="icon">
-                            <h6 class="title">Simulation</h6>
-                            <p class="subtitle">I’ve led several industrial simulation projects and my Master’s thesis is all about simulation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/NLP.svg"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                class="icon">
-                            <h6 class="title">NLP</h6>
-                            <p class="subtitle">I explored this during my seminar, then tooks some courses related to NLP and also i have done some project in this domain</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div>
-    </section><!-- end of service section -->
-
-
-   
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Projects</h6>
-            <!-- row -->
-
-            <style>
-                .spaced-row {
-                    margin-bottom: 0.5cm;
-                }
-            </style>
-
-
-            <div class="row spaced-row">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/netflix.jpg" class="portfolio-card-img"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Privacy Enhanced Movie Recommendation System</h5>
-                                    <p class="font-weight-normal">Developed a movie recommendation system using matrix factorization, which predicts what movies users might like based on past ratings.
-                                         To protect user privacy, I added 3 different layers of differential privacy,
-                                         ensuring that individual ratings can't be traced back to users. </p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/data.jpeg" class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>AI for Advanced Data Analysis and Simulation</h5>
-                                    <p class="font-weight-normal"> Created a framework to analyze and extract insights from large-scale simulation data using Data Farming and explainable AI techniques,
-                                         with plans to integrate large language models for enhanced analysis.</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/airport.jpg" class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Optimized Flight Delays using Heuristics</h5>
-                                    <p class="font-weight-normal">Developed a heuristic-based solution to minimize flight delays, generating Pareto optimal solutions using
-                                         Gurobi Solver and further refining them with a threshold-based approach</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-            </div><!-- end of row -->
-
-            <div class="row spaced-row">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/llm.jpg" class="portfolio-card-img"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>LLM for Automated Commonsense Knowledge Graph Construction</h5>
-                                    <p class="font-weight-normal">Fine-tuned GPT-1 in COMET to automatically generate and enhance commonsense inferences, leveraging vast knowledge graphs,]
-                                         achieving high-quality and novel commonsense generation. </p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/passenger.jpg" class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Airline Ticket Sales Prediction Using Time Series Forecasting</h5>
-                                    <p class="font-weight-normal"> Forecasted airline ticket sales using models like ARIMA, SARIMA, and Prophet, achieving superior accuracy with Facebook’s
-                                         Prophet model by analyzing time series data for patterns and trends.</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/delivery.png" class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Vehicle Routing using Metaheuristics</h5>
-                                    <p class="font-weight-normal"> Applied Genetic Algorithm and Genetic K-means metaheuristics to optimize vehicle routing, achieving optimal costs for different
-                                         fleet sizes in a network with customer demand and depot coordinates.</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                </div>
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
-    
-    <!-- pricing section 
-    
-    <section class="section" id="pricing">
-        <div class="container text-center">
-            <p class="section-subtitle">How Much I Charge ?</p>
-            <h6 class="section-title mb-6">My Pricing</h6>
-            
-            <div class="pricing-wrapper">
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/scooter.svg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">Free</h6>
-                        <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p><i class="ti-close"></i></p>
-                            <p><i class="ti-close"></i></p>
-                        </div>
-                    </div>
-                    <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>0.00/Month</span>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">Basic</h6>
-                        <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p>accusamus laboriosam</p>
-                            <p><i class="ti-close"></i></p>
-                        </div>
-                    </div>
-                    <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>9.99/Month</span>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/startup.svg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">Premium</h6>
-                        <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p>accusamus laboriosam</p>
-                            <p>inventore omnis</p>
-                        </div>
-                    </div>
-                    <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>99.9/Month</span>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
-                </div>
-
-            </div><!-- end of pricing wrapper -->
-        </div> <!-- end of container -->
-    </section><!-- end of pricing section -->
-
-    <!-- section -->
-     <!--
-    <section class="section-sm bg-primary">
-        
-        <div class="container text-center text-sm-left">
-            
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Want to work with me?</h6>
-                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of section -->
-
-    <!-- testimonial section -->
-    <!--
-    <section class="section" id="testmonial">
-        <div class="container text-center">
-            <p class="section-subtitle">What Think Client About Me ?</p>
-            <h6 class="section-title mb-6">Testmonial</h6>
-        -->
-            <!-- row -->
-             <!--
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
-                                adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
-                                adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
+  <main id="top">
+    <section class="landing-hero reveal">
+      <div class="container landing-content">
+        <div class="landing-identity">
+          <div class="brand-lockup" aria-label="Monu Kumar Pathak personal brand">
+            <p class="brand-name">Monu Kumar Pathak</p>
+            <div class="brand-meta">
+              <span class="brand-pill" id="tagline-prefix"></span>
+              <span class="brand-dot" aria-hidden="true"></span>
+              <!-- <span class="brand-role">Applied AI & Algorithms · Kinaxis Research</span> -->
             </div>
-        </div> -->
-        <!-- end of container -->
-    </section> <!-- end of testimonial section -->
+          </div>
 
-    <!-- blog section -->
-    <section class="section" id="blog">
-        <!-- container -->
-        <div class="container text-center">
-            <p class="section-subtitle">Recent Posts?</p>
-            <h6 class="section-title mb-6">Blog</h6>
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/blog1.jpg" class="blog-card-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Today i created this webpage </h6>
+          <h1 id="tagline-text" class="landing-tagline" aria-label="Animated tagline"></h1>
 
-                        <p class="blog-card-caption">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 1</a>
-                            <a href="#"><i class="ti-comment"></i> 1</a>
-                        </p>
-                        <p>I don't know why i created this page but this was fun and also i learned various new things as well like bootstrap 5.</p>
+          <div class="landing-actions">
+            <a class="btn btn-primary" href="#about" aria-label="Jump to About section">About me</a>
+            <a class="btn btn-secondary" href="Monu_Pathak_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open CV PDF">View CV</a>
+          </div>
 
-                        <p><b>Its 3 O'clock in morning and i am sitting in front of desktop and doing this.</b>
-                        </p>
-                        <p></p>
+          <div class="landing-social" aria-label="Social links">
+            <a class="social-chip" href="https://www.linkedin.com/in/monupathak23/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="social-chip" href="https://github.com/monupathak" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="social-chip" href="mailto:pathakmonu236@gmail.com">Email</a>
+          </div>
 
-                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
+          <div class="cursor" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
 
-            <!-- blog-wrapper -->
-             <!--
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/blog1.jpg" class="blog-card-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Explicabo illo</h6>
-
-                        <p class="blog-card-caption">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
-                        </p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim,
-                            vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro
-                            quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto
-                            omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae?
-                            Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non
-                            dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus
-                            eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-                </div>-->
-            </div><!-- end of blog wrapper -->
-        
-        </div><!-- end of container -->
-    </section><!-- end of blog section -->
-
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="https://formspree.io/f/mjkblddk" method="POST"  class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                    </div>
-                </div>
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
-
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">
-            <!-- <p class="mb-0">Credits--
-                  <a
-                    href="http://www.devcrud.com">DevCRUD</a> Distribution <a
-                    href="https://themewagon.com">ThemeWagon</a>
-            </p> -->
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://github.com/monupathak" class="link"><i class="ti-github"></i></a>
-                <a href="https://www.linkedin.com/in/monupathak23/" class="link"><i class="ti-linkedin"></i></a>
-                <a href="https://www.instagram.com/akamonupathak/?igsh=MXNrYnVidDd3ejJpYg%3D%3D" class="link"><i class="ti-instagram"></i></a>
-                <a href="mailto:23m1526@iitb.ac.in" class="link"><i class="ti-email"></i></a>
+    <section id="about" class="hero reveal">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h1><span class="gradient-text">Hi, </span>I'm <span class="gradient-text">Monu Kumar Pathak</span></h1>
+            <p class="subtle-text">An AI, LLM, and NLP enthusiast.</p>
+            <p class="strong-text">
+              Currently working as an SDE 1 (Applied AI & Algorithms) in the Kinaxis India Research Team.
+            </p>
+            <p class="strong-text">
+              I completed my <span style="color: #A3E635;">M.Tech in the IEOR department at IIT Bombay</span>, focusing on the intersection of mathematical optimization and LLM-driven decision systems for high-reliability environments.
+            </p>
+            <p class="emphasis">
+              My usual day looks like this:<br>
+              • Teaching machines to think.<br>
+              • Occasionally teaching them not to hallucinate.<br>
+              • Constantly teaching myself to do the same.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="Monu_Pathak_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="View CV">View CV</a>
+              <a class="btn btn-secondary" href="#projects" aria-label="Explore Projects">Explore Projects</a>
             </div>
-        </footer>
-    </div> <!-- end of page footer -->
+          </div>
+          <figure class="profile-card glass">
+            <img src="profile.jpeg" alt="Monu Kumar Pathak - AI and LLM Researcher" loading="lazy" />
+          </figure>
+        </div>
+        
+        <!-- Stats Section -->
+        <div class="stats-grid">
+          <div class="stat-card glass reveal">
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <!-- <div class="stat-card glass reveal">
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div> -->
+          <div class="stat-card glass reveal">
+            <div class="stat-number" data-target="10">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-card glass reveal">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Research Areas</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category glass">
+            <h4>🤖 AI & Machine Learning</h4>
+            <div class="skill-badges">
+              <span class="skill-badge">PyTorch</span>
+              <span class="skill-badge">TensorFlow</span>
+              <span class="skill-badge">Transformers</span>
+              <span class="skill-badge">Deep RL</span>
+              <span class="skill-badge">Scikit-learn</span>
+            </div>
+          </div>
+          <div class="skill-category glass">
+            <h4>📝 NLP & LLMs</h4>
+            <div class="skill-badges">
+              <span class="skill-badge">Hugging Face</span>
+              <span class="skill-badge">LangChain</span>
+              <span class="skill-badge">GPT Models</span>
+              <span class="skill-badge">BERT/RoBERTa</span>
+              <span class="skill-badge">Prompt Engineering</span>
+            </div>
+          </div>
+          <div class="skill-category glass">
+            <h4>💻 Programming</h4>
+            <div class="skill-badges">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">Git</span>
+            </div>
+          </div>
+          <div class="skill-category glass">
+            <h4>🔧 Tools & Platforms</h4>
+            <div class="skill-badges">
+              <span class="skill-badge">AWS</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">MLflow</span>
+              <span class="skill-badge">Jupyter</span>
+              <span class="skill-badge">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <section id="trajectory" class="section">
+      <div class="container">
+        <h2 class="reveal">Career Trajectory</h2>
+        <div class="ladder" aria-label="Career ladder">
+          <div class="ladder-rail" aria-hidden="true"></div>
 
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
+          <article class="ladder-rung glass ladder-rung--left">
+            <div class="ladder-node" aria-hidden="true"></div>
+            <div class="ladder-step">
+              <h3>LLM Research Intern (Healthcare) - Cognitio Analytics</h3>
+              <p class="meta">Internship phase · <span class="timeline-date">May '24 – Jul '24</span></p>
+              <p>Worked on healthcare LLM workflows and sequential prediction modeling with neural architectures.</p>
+            </div>
+          </article>
 
+          <article class="ladder-rung glass ladder-rung--right">
+            <div class="ladder-node" aria-hidden="true"></div>
+            <div class="ladder-step">
+              <h3>IIT Bombay - M.Tech, IEOR</h3>
+              <p class="meta">Academic phase · <span class="timeline-date">Jul '24 – Jun '25</span></p>
+              <p>Advanced computational research across AI, simulation, and decision intelligence.</p>
+            </div>
+          </article>
+
+          <article class="ladder-rung glass ladder-rung--left">
+            <div class="ladder-node" aria-hidden="true"></div>
+            <div class="ladder-step">
+              <h3>Master's Thesis - XAI in Simulation Output Analysis</h3>
+              <p class="meta">Research phase · <span class="timeline-date">Aug '24 – Dec '24</span></p>
+              <p>Developed models to quantify each feature's impact in stochastic settings and explain simulation output data to users.</p>
+            </div>
+          </article>
+
+          <article class="ladder-rung glass ladder-rung--right">
+            <div class="ladder-node" aria-hidden="true"></div>
+            <div class="ladder-step">
+              <h3>Master's Thesis - Deep RL for Advanced Decision-Making</h3>
+              <p class="meta">Research phase · <span class="timeline-date">Jan '25 – Jun '25</span></p>
+              <p>Designed DRL agents for adaptive scheduling and high-stakes optimization in dynamic environments.</p>
+            </div>
+          </article>
+
+          <article class="ladder-rung glass ladder-rung--left">
+            <div class="ladder-node ladder-node--current" aria-hidden="true"></div>
+            <div class="ladder-step">
+              <h3>SDE 1 (Applied AI & Algorithms) - Kinaxis India Research Team</h3>
+              <p class="meta">Current phase · <span class="timeline-date">Jul '25 – Present</span></p>
+              <p>Developing production-grade AI and algorithmic systems for intelligent enterprise decision platforms.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        
+        <div class="project-grid" id="project-grid">
+          
+          <article class="project-card glass">
+            <div class="project-card-header">
+              <h3>Healthcare LLM Research Pipeline</h3>
+            </div>
+            <p class="project-summary">Built LSTM and Transformer models for healthcare AI use-cases with patient history data.</p>
+            <div class="project-details">
+              <p>Reviewed and mapped generative AI literature to healthcare use-cases; processed broad patient history data; built LSTM and Transformer models for next-visit representation. Developed end-to-end pipelines for medical sequence modeling and clinical prediction tasks.</p>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">LLM . Healthcare AI . Sequence Modeling</span>
+              <button class="project-expand-btn" aria-label="See more details">See More</button>
+            </div>
+          </article>
+          
+          <article class="project-card glass">
+            <div class="project-card-header">
+              <h3>AI for Advanced Data Analytics</h3>
+            </div>
+            <p class="project-summary">Developed simulation intelligence workflows with data farming and explainable models.</p>
+            <div class="project-details">
+              <p>Developed simulation intelligence workflows with data farming, clustering, and explainable models; executed large-scale simulation experiments and improved interpretability. Built automated pipelines for insight extraction from complex simulation outputs.</p>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">Simulation AI . XAI . Unsupervised Learning</span>
+              <button class="project-expand-btn" aria-label="See more details">See More</button>
+            </div>
+          </article>
+          
+          <article class="project-card glass">
+            <div class="project-card-header">
+              <h3>Deep RL for Job Scheduling</h3>
+            </div>
+            <p class="project-summary">Implemented DQN agent with SimPy-based environment and custom reward shaping.</p>
+            <div class="project-details">
+              <p>Implemented a DQN agent from scratch with SimPy-based environment generation and custom reward shaping, achieving strong gains over standalone strategies. Designed adaptive scheduling policies for dynamic manufacturing environments.</p>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">Deep RL . Decision AI . SimPy</span>
+              <button class="project-expand-btn" aria-label="See more details">See More</button>
+            </div>
+          </article>
+          
+          <article class="project-card glass">
+            <div class="project-card-header">
+              <h3>LLM for Knowledge Graphs</h3>
+            </div>
+            <p class="project-summary">Fine-tuned COMET-style generative modeling for commonsense inference.</p>
+            <div class="project-details">
+              <p>Fine-tuned COMET-style generative modeling for commonsense inference generation, leveraging ConceptNet and ATOMIC-scale knowledge graphs. Created novel approaches for reasoning over structured knowledge representations.</p>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">LLM . Knowledge Graphs . Generative AI</span>
+              <button class="project-expand-btn" aria-label="See more details">See More</button>
+            </div>
+          </article>
+          
+          <article class="project-card glass">
+            <div class="project-card-header">
+              <h3>Private Recommendation Systems</h3>
+            </div>
+            <p class="project-summary">Built privacy-preserving recommendation pipelines with differential privacy.</p>
+            <div class="project-details">
+              <p>Built privacy-preserving recommendation pipelines with Laplace noise at multiple stages, implementing ALS and SGD matrix factorization while balancing privacy and accuracy. Achieved strong utility-privacy tradeoffs in production settings.</p>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">ML Systems . Differential Privacy . Recommenders</span>
+              <button class="project-expand-btn" aria-label="See more details">See More</button>
+            </div>
+          </article>
+          
+          <article class="project-card glass">
+            <div class="project-card-header">
+              <h3>NLP Model Optimization</h3>
+            </div>
+            <p class="project-summary">Optimized NLP models achieving 4x inference speedup for production.</p>
+            <div class="project-details">
+              <p>Optimized NLP models for production deployment with quantization, pruning, and knowledge distillation techniques achieving 4x inference speedup. Deployed efficient models on edge devices with minimal accuracy loss.</p>
+            </div>
+            <div class="project-footer">
+              <span class="project-tags">NLP . Model Optimization . Production</span>
+              <button class="project-expand-btn" aria-label="See more details">See More</button>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="endorsements" class="section reveal">
+      <div class="container">
+        <h2>Endorsements and Recommendations</h2>
+        <div class="endorsement-stage" id="endorsement-stage">
+          <article class="endorsement-card glass" data-index="0">
+            <blockquote>"Monu possesses deep knowledge of LLM and simulation research. He helped me many times during college and continued to provide that expertise in the industry."</blockquote>
+            <footer><strong>Viplaw</strong><span>OnSemi Research</span></footer>
+          </article>
+          <article class="endorsement-card glass" data-index="1">
+            <blockquote>"Monu brings a strong statistical foundation to every project. While working together on distribution modeling, his ability to break down mathematical complexities into functional logic made him a highly effective collaborator."</blockquote>
+            <footer><strong>Saurabh</strong><span>Data Scientist - IndusInd Bank</span></footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>Open to collaborations and interesting challenges.</p>
+        <div class="contact-grid">
+          <a class="contact-btn" href="mailto:pathakmonu236@gmail.com" title="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            Email
+          </a>
+          <a class="contact-btn" href="https://www.linkedin.com/in/monupathak23/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.006 1.422-.103.249-.129.597-.129.946v5.437h-3.554s.047-8.733 0-9.633h3.554v1.36c.401-.618 1.119-1.5 2.719-1.5 1.987 0 3.475 1.255 3.475 3.952v5.821zM5.337 9.432c-1.144 0-1.915-.759-1.915-1.71 0-.952.768-1.71 1.959-1.71 1.19 0 1.916.759 1.916 1.71 0 .951-.726 1.71-1.96 1.71zm1.581 11.02H3.757V9.819h3.161v10.633zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
+            </svg>
+            LinkedIn
+          </a>
+          <a class="contact-btn" href="https://www.instagram.com/akamonupathak/" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+              <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="currentColor"></path>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"></circle>
+            </svg>
+            Instagram
+          </a>
+          <a class="contact-btn" href="https://github.com/monupathak" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; Monu Kumar Pathak . AI and LLM Research Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>

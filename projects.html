@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Monu Kumar Pathak</title>
-  <meta name="description" content="AI, LLM, and NLP projects by Monu Kumar Pathak" />
+  <meta name="description" content="Applied AI, optimization, simulation, and reinforcement learning projects by Monu Kumar Pathak" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -199,7 +199,7 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; Monu Kumar Pathak . AI and LLM Research Portfolio</p>
+    <p>&copy; Monu Kumar Pathak . Applied AI and Algorithms Portfolio</p>
   </footer>
 
   <script src="script.js"></script>
@@ -207,34 +207,64 @@
     // Project wheel carousel
     const projects = [
       {
-        title: 'Healthcare LLM Research Pipeline',
-        description: 'Reviewed and mapped generative AI literature to healthcare use-cases; processed broad patient history data; built LSTM and Transformer models for next-visit representation.',
-        tags: ['LLM', 'Healthcare AI', 'Sequence Modeling']
+        title: 'Agentic Supply-Chain Decision Intelligence',
+        description: 'Built a stateful LangGraph decision layer with human approval for data writes, achieving 96% grounded structured output and reducing numeric hallucination from 18% to 2%.',
+        tags: ['LangGraph', 'Agentic AI', 'Supply Chain']
       },
       {
-        title: 'AI for Advanced Data Analytics and Simulation',
-        description: 'Developed simulation intelligence workflows with data farming, clustering, and explainable models; executed large-scale simulation experiments and improved interpretability.',
-        tags: ['Simulation AI', 'XAI', 'Unsupervised Learning']
+        title: 'Sample-Efficient Inventory Policy Learning',
+        description: 'Built HDPO and graph neural network inventory policies in PyTorch, reaching optimality gaps as low as 0.03% with up to 64x less data.',
+        tags: ['PyTorch', 'GNN', 'Differentiable Simulation']
       },
       {
-        title: 'Deep RL for Dynamic Job Scheduling',
-        description: 'Implemented a DQN agent from scratch with SimPy-based environment generation and custom reward shaping, achieving strong gains over standalone strategies.',
+        title: 'Deep RL for Production Scheduling',
+        description: 'Implemented a DQN agent from scratch in a SimPy discrete-event environment, reducing makespan by 42% against conventional dispatching rules.',
         tags: ['Deep RL', 'Decision AI', 'SimPy']
       },
       {
-        title: 'LLM for Commonsense Knowledge Graph',
-        description: 'Fine-tuned COMET-style generative modeling for commonsense inference generation, leveraging ConceptNet and ATOMIC-scale knowledge graphs.',
-        tags: ['LLM', 'Knowledge Graphs', 'Generative AI']
+        title: 'XAI for Simulation Output Analysis',
+        description: 'Ran more than one million simulations and combined K-Means, DBSCAN, neural networks, random forests, and SHAP to explain output behavior.',
+        tags: ['Simulation', 'XAI', 'SHAP']
       },
       {
         title: 'Differentially Private Recommendation Systems',
-        description: 'Built privacy-preserving recommendation pipelines with Laplace noise at multiple stages, implementing ALS and SGD matrix factorization while balancing privacy and accuracy.',
+        description: 'Applied Laplace noise at input, processing, and output stages and implemented ALS and SGD matrix factorization, achieving 0.92 RMSE on perturbed data.',
         tags: ['ML Systems', 'Differential Privacy', 'Recommenders']
       },
       {
-        title: 'NLP Model Optimization & Deployment',
-        description: 'Optimized NLP models for production deployment with quantization, pruning, and knowledge distillation techniques achieving 4x inference speedup.',
-        tags: ['NLP', 'Model Optimization', 'Production']
+        title: 'Commonsense Reasoning in LLMs',
+        description: 'Fine-tuned GPT-1 using ConceptNet and ATOMIC, achieving 11.14 perplexity and a 15.10 BLEU-2 score for commonsense inference generation.',
+        tags: ['GPT-1', 'Knowledge Graphs', 'NLP']
+      },
+      {
+        title: 'Multi-Echelon Inventory Network Modeling',
+        description: 'Modeled stochastic demand and lead-time propagation, service-level reorder points, expected backorders, and bill-of-material dependencies across inventory networks.',
+        tags: ['Stochastic Modeling', 'Inventory', 'Graph Algorithms']
+      },
+      {
+        title: 'Derivative-Free Inventory Optimization',
+        description: 'Solved a stochastic nonlinear inventory model using Dual Annealing and Differential Evolution, with warm starts and variable elimination for faster convergence.',
+        tags: ['Nonlinear Optimization', 'SciPy', 'Metaheuristics']
+      },
+      {
+        title: 'Statistical Distribution Modeling',
+        description: 'Developed and validated parametric convolution approximations using AIC, BIC, the KS statistic, and PP and QQ diagnostic plots.',
+        tags: ['Probability', 'AIC/BIC', 'Goodness of Fit']
+      },
+      {
+        title: 'Open-Source FJSSP Simulation Library',
+        description: 'Created a configurable SimPy library for flexible job-shop scheduling with pluggable rules, live-state access, and pause, test, and resume workflows.',
+        tags: ['Open Source', 'SimPy', 'Scheduling']
+      },
+      {
+        title: 'EHR-Based Patient Risk Modeling',
+        description: 'Modeled 58,000 hospital admissions with LSTM, Transformers, and LightGBM, improving disease-classification AUROC by 19% over end-to-end neural models.',
+        tags: ['Healthcare AI', 'EHR', 'Transformers']
+      },
+      {
+        title: 'Insurance Risk Quantification',
+        description: 'Identified insurance claim distributions with KS and chi-squared tests, quantified tail risk using VaR and TVaR, and proposed risk-based product strategies.',
+        tags: ['Risk Modeling', 'VaR/TVaR', 'Statistical Testing']
       }
     ];
 

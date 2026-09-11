@@ -22,7 +22,7 @@ function setupTypewriter() {
   let isTyping = true;
   
   // Prefix text
-  const prefixText = "AI . LLM . NLP";
+  const prefixText = "APPLIED AI . RL . NLP . SIMULATION";
   let prefixIndex = 0;
   
   function typePrefix() {

@@ -455,6 +455,47 @@ p { color: var(--muted); line-height: 1.85; }
 .ladder-step h3 { margin: 0; font-size: 1.08rem; }
 .meta { margin: 6px 0 10px; font-size: .9rem; color: #b7c8d5; }
 
+.phase-topics-title {
+  margin: 16px 0 8px;
+  color: #dff5cf;
+  font-size: .92rem;
+}
+
+.phase-topics {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.phase-topics li::marker { color: var(--accent-2); }
+
+.phase-coursework {
+  gap: 6px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.phase-coursework a,
+.phase-coursework .course-without-link {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 8px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.phase-coursework a:hover { color: var(--accent-2); }
+
+.phase-coursework a > span,
+.phase-coursework .course-without-link > span {
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
 .ladder-rung--left { justify-self: start; transform: translateX(-34px); }
 .ladder-rung--right { justify-self: end; transform: translateX(34px); }
 

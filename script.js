@@ -8,14 +8,14 @@ function setupTypewriter() {
   
   if (!taglineText) return;
   
-  const plainText = "Turning compute into logic, and stochastic guesses into optimal decisions.";
+  const plainText = "Turning compute into logical decisions.";
   const speedText = 40;
   const speedPrefix = 100;
   
   // Define which words should be colored: [startIndex, endIndex, color]
   const coloredRanges = [
     [8, 15, "#A3E635"],      // "compute"
-    [56, 78, "#A3E635"]      // "optimal decisions"
+    [29, 38, "#A3E635"]      // "decisions"
   ];
   
   let charIndex = 0;
